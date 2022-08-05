@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+</head>
+<body>
+    <form>
+       <h1>Payment form</h1>
+       
+       <fieldset>
+        <legend>Contact Information</legend>
+       <p>First Name* : <input type="text" placeholder="Enter your First name" name="Fname" required maxlength="15"></p>
+
+       <p>Last  Name : <input type="text" placeholder="Enter your last name " name="Lname" maxlength="15"></p>
+
+       <p>Age : <input type="number" placeholder="Enter your age " name="age" min="18" max="80"></p>
+
+       <p>Phone no.*  : <input type="number" placeholder="Enter your phone number" name="Number" required></p>
+
+       <p>Gender     : Male <input type="radio" name="gender" id="Male">
+                       Female <input type="radio" name="gender" id="female">
+       </p>
+
+       <p>Email*      : <input type="email" name="Email" id="email" placeholder="Enter your email" required> </p>
+
+       <p>Address*    : <textarea name="address" id="address" cols="30" rows="1" placeholder="Enter your address" required></textarea> </p>
+
+       <p>Pincode    : <input type="number" name="pincode" id="pincode" placeholder="Enter your pincode"></p>
+
+       <p>Select Your Colors : <input type="color" value="#14FF67"></p>
+       </fieldset>
+       
+       <fieldset>
+        <legend>Payment Information</legend>
+       <p><mark>Plese do not share your OTP to anyone.</mark></p>
+       <del>OTP is : 123456</del>
+       <p>Card Type*  : <select name="Card Type" id="Card Type" required >
+                         <option value="--Select Card Type--">--Select Card Type--</option>
+                         <option value="Visa">Visa</option>
+                         <option value="mastercard">Mastar Card</option>
+                         <option value="rupay">Rupay </option>
+                       </select> 
+       </p>
+       <p>Card No.*  : <input type="number" name="cardnumber" id="cardnumber" required></p>
+       <p>Expiration Date* : <input type="date" name="expdate" id="expdate" required></p>
+       <p>CVV* : <input type="password" name="cvv" id="cvv" required></p>
+       <input type="submit" value="Pay Now" name="paynow" id="paynow">
+       <input type="reset" value="Reset">
+       </fieldset>
+       Upload Your Payment ScreenShot : <input type="file" name="Payment ScreenShot">
+       <span><img src="Payment.png" title="Payment karo bhai" width="300" height="300" align="center"/></span>
+       <br>
+       <center><a href="https://www.google.co.in/" target="_blank" ><h2>Tap here<h2></a></center>
+    </form>
+</body>
+</html>
